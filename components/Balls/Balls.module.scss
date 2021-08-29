@@ -1,5 +1,8 @@
 .area {
   width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background: yellowgreen;
   border-radius: 19px;
   padding: 1em;
@@ -11,11 +14,11 @@
     width: 1.5em;
     height: 1.5em;
     line-height: 1.5em;
-    display: inline-block;
+    display: inline-table;
     margin: 0.1em;
   }
 }
 
 .active {
-  background: yellow!important;
+  background: yellow !important;
 }

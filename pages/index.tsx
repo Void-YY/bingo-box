@@ -1,7 +1,7 @@
 /*
  * @Author: VoidY
  * @Date: 2021-08-28 16:32:53
- * @LastEditTime: 2021-08-28 23:12:27
+ * @LastEditTime: 2021-08-29 18:11:36
  * @LastEditors: VoidY
  * @Description:
  */
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/VoidWh/bingo-box"
           target="_blank"
           rel="noopener noreferrer"
         >
