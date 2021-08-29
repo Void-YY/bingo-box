@@ -1,7 +1,7 @@
 /*
  * @Author: VoidY
  * @Date: 2021-08-28 22:49:03
- * @LastEditTime: 2021-08-29 17:10:08
+ * @LastEditTime: 2021-08-29 17:40:44
  * @LastEditors: VoidY
  * @Description:
  */
@@ -19,13 +19,14 @@ const Bingo: NextPage = () => {
   const [selectedCount, selectSelectedCount] = useState(0);
   const [startedFlag, setStartedFlag] = useState(false);
   const randomArray = shuffle(range(1, count + 1));
+  let timer: NodeJS.Timeout;
 
   const randomRoll = () => {
     setActiveNumber(random(selectedCount, randomArray.length - 1));
   };
   useEffect(() => {
     if (startedFlag) {
-      setTimeout(() => randomRoll(), 1000);
+      timer = setTimeout(() => randomRoll(), 1000);
     }
   }, [activeNumber]);
 
@@ -34,8 +35,9 @@ const Bingo: NextPage = () => {
     randomRoll();
   };
   const stop = () => {
+    clearTimeout(timer);
     setStartedFlag(false);
-    setActiveNumber(selectedCount);
+    // setActiveNumber(selectedCount);
     selectSelectedCount(selectedCount + 1);
   };
   return (
