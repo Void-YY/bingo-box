@@ -1,6 +1,18 @@
-.main{
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+}
+.button {
+  padding: 1em;
+  margin: 0.5em;
+  border: 2px dashed;
+  border-radius: 19px;
+  cursor: pointer;
+  &:hover{
+    background: green;
+    color: wheat;
+  }
 }
