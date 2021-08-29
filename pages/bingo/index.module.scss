@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
 }
 .button {
   padding: 1em;
@@ -11,8 +12,14 @@
   border: 2px dashed;
   border-radius: 19px;
   cursor: pointer;
-  &:hover{
-    background: green;
-    color: wheat;
+
+  transition: border-radius 1s;
+  -webkit-transition: border-radius 1s;
+  &:hover {
+    background: gold;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }

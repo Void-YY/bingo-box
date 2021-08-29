@@ -1,6 +1,5 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +8,8 @@
 }
 
 .main {
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  width: 100%;
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -34,7 +35,9 @@
 }
 
 .title a {
-  color: yellowgreen;
+  color: yellow;
+  border: 0.4em dashed gold;
+  border-radius: 19px;
   text-decoration: none;
 }
 
@@ -107,7 +110,6 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
 
 @media (max-width: 600px) {
   .grid {
